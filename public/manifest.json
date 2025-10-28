@@ -1,13 +1,18 @@
 {
-    "manifest_version": 3,
-    "name": "React Chrome Extension",
-    "version": "1.0.0",
-    "description": "A simple React app as a Chrome extension",
-    "action": {
-      "default_popup": "index.html"
-    },
-    "background": {
-      "service_worker": "background.js"
-    },
-    "permissions": []
-  }
+  "manifest_version": 3,
+  "name": "Deepseek RTL Extension",
+  "version": "1.0.0",
+  "description": "A Deepseek RTL Extension",
+  "action": {
+    "default_icon": {
+      "16": "logo-off.png",
+      "48": "logo-off.png",
+      "128": "logo-off.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"]
+}
